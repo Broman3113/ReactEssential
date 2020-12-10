@@ -2,52 +2,47 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-const MyComponent = () => {
-  return <div>(This is my component text)</div>
+const Welcome = (props) =>{
+  return (
+      <div>
+        <h1>Welcome, {props.name}</h1>
+        {props.children || "Default text(instead You are 19)"}
+      </div>
+  )
+}
+const Welcome2 = (props) =>{
+    // if (props.children){
+    //     return props.children;
+    // } else {
+    //     return <div>Default</div>;
+    // }
+
+    return props.children ? props.children : "Default text(instead You are 19)" /*Using Ternary operator*/
+
 }
 
-const MyProp = props => {
-  return <div>This is my ({props.text})</div>
+const Age = (props) => {
+  return (
+      <div>
+          <p>You are {props.age}</p>
+      </div>
+  )
 }
 
-const MyText = ({text = "Default text"}) => {
-  return <div>Text ({text})</div>
-}
-
-//Best option
-const MyTextTernar = props =>{
-  return <div>Best option text ({props.text || "Default text"})</div>
-}
-
-//Class Component
-class MyClassComponent extends React.Component{
-  render() {
-    return <div>Class text ({this.props.text || "Default class text"})</div>
-  }
-}
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        {/*<MyComponent></MyComponent> //Warning that has empty tag but we can use it too*/}
-        <MyComponent/>
 
-        <MyProp text="Prop text 1"/>
-        <MyProp text="Prop text 2"/>
+        <Welcome name="Andrey" age="19">
+          <Age age="19"> Years old</Age>
+        </Welcome>
 
-        <MyText text="1"/>
-        <MyText/>
+        <Welcome2 name="Andrey">
+        </Welcome2>
 
-        <MyTextTernar text="1"/>
-        <MyTextTernar/>
-
-        <MyClassComponent text="1"/>
-        <MyClassComponent/>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         <a
           className="App-link"
           href="https://reactjs.org"
