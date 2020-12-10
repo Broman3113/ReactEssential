@@ -5,3 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Lesson navigations
 
 [Lesson 1](https://github.com/Broman3113/ReactEssential/tree/Lesson-1)
+
+[Lesson 2](https://github.com/Broman3113/ReactEssential/tree/Lesson-2)
+
