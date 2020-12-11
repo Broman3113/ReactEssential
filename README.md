@@ -1,3 +1,4 @@
-# Homework lesson 2
+# Homework lesson 3
 
-Add one props in several blocks
+Create component that will output 2 buttons and counter. By clicking on the appropriate button counter will increase or 
+decrease.

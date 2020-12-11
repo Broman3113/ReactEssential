@@ -1,34 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import { ClickCounter } from './components/ClickCounter';
+import { List } from  './components/List';
 
-const Welcome = (props) =>{
-  return (
-      <div>
-        <h1>Welcome, {props.name}</h1>
-        {props.children || "Default text(instead You are 19)"}
-      </div>
-  )
-}
-const Welcome2 = (props) =>{
-    // if (props.children){
-    //     return props.children;
-    // } else {
-    //     return <div>Default</div>;
-    // }
-
-    return props.children ? props.children : "Default text(instead You are 19)" /*Using Ternary operator*/
-
-}
-
-const Age = (props) => {
-  return (
-      <div>
-          <p>You are {props.age}</p>
-      </div>
-  )
-}
-
+const numbers = [1,2,3,4,5];
 
 function App() {
   return (
@@ -36,12 +12,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
 
-        <Welcome name="Andrey" age="19">
-          <Age age="19"> Years old</Age>
-        </Welcome>
+        <ClickCounter/>
 
-        <Welcome2 name="Andrey">
-        </Welcome2>
+        <List items={numbers}></List>
 
         <a
           className="App-link"
