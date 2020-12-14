@@ -1,15 +1,16 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Clock } from "./components/Clock";
+import { Toggle } from "./components/Toggle";
 
 const MyComponent = () => {
-  return <div>This is the Main page on React Essential!</div>
+  return <div>1. Create component that will appear and disappear by toggling corresponding button.</div>
 }
 
 //Class Component
 class MyClassComponent extends React.Component{
   render() {
-    return <div>To see lessons check corresponding Branches :)</div>
+    return <div>To see more lessons check corresponding Branches :)</div>
   }
 }
 
@@ -17,10 +18,11 @@ function App() {
   return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <Clock/>
 
           <br/>
           <MyComponent/>
+          <Toggle/>
 
           <MyClassComponent/>
 
