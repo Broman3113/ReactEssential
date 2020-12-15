@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
 import { Clock } from "./components/Clock";
-import { Toggle } from "./components/Toggle";
+import { JSONForm } from "./components/JSONForm";
 
 const MyComponent = () => {
-  return <div>1. Create component that will appear and disappear by toggling corresponding button.</div>
+  return <div></div>
 }
 
 //Class Component
@@ -22,7 +22,7 @@ function App() {
 
           <br/>
           <MyComponent/>
-          <Toggle/>
+          <JSONForm/>
 
           <MyClassComponent/>
 
