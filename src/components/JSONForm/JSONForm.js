@@ -1,4 +1,5 @@
 import React from "react";
+import styles from "./JSONForm.module.css";
 
 export class JSONForm extends React.Component{
     constructor(props) {
@@ -36,18 +37,21 @@ export class JSONForm extends React.Component{
             <form onSubmit={this.handleSubmit}>
                 <label>
                     <input
+                        className={styles.input}
                         type="text"
                         name="first"
                         onChange={this.handleInputChange}
                         value={this.state.first}
                     />
                     <input
+                        className={styles.input}
                         type="text"
                         name="second"
                         onChange={this.handleInputChange}
                         value={this.state.second}
                     />
                     <input
+                        className={styles.input}
                         type="text"
                         name="third"
                         onChange={this.handleInputChange}

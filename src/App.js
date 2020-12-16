@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Clock } from "./components/Clock";
-import { JSONForm } from "./components/JSONForm";
+import { JSONForm } from "./components/JSONForm/JSONForm";
 
 const MyComponent = () => {
   return <div></div>

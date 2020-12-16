@@ -1,0 +1,12 @@
+.input {
+  background-color: grey;
+  outline: none;
+  border: none;
+  margin: 1px;
+  padding: 5px;
+}
+
+.input:focus {
+  background-color: #fff;
+}
+
