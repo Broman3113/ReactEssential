@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 import { Clock } from "./components/Clock";
-import { Toggle } from "./components/Toggle";
+import { Icon } from "./components/Icon";
+import { iconTypes } from "./constants/icons";
+import { Button } from "./components/Button";
 
 const MyComponent = () => {
-  return <div>1. Create component that will appear and disappear by toggling corresponding button.</div>
+  return <div></div>
 }
 
 //Class Component
@@ -22,7 +24,17 @@ function App() {
 
           <br/>
           <MyComponent/>
-          <Toggle/>
+
+          <Button className="customClass" id="id" iconType={iconTypes.plus}>First</Button>
+          <br/>
+          <Button className="customClass" size="small" color="primary" id="id">Second</Button>
+          <br/>
+
+
+          <Icon type={iconTypes.cross} color="cyan" id="23" className="plus"/>
+          <br/>
+          <Icon type={iconTypes.plus} size="16px" id="22"/>
+          <br/>
 
           <MyClassComponent/>
 
