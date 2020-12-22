@@ -17,3 +17,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 [Lesson 6](https://github.com/Broman3113/ReactEssential/tree/Lesson-6)
 
 [Lesson 7](https://github.com/Broman3113/ReactEssential/tree/Lesson-7)
+
+[Lesson 8](https://github.com/Broman3113/ReactEssential/tree/Lesson-8)
+
+[Lesson 9](https://github.com/Broman3113/ReactEssential/tree/Lesson-9)
