@@ -1,9 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Clock } from "./components/Clock";
-import { Icon } from "./components/Icon";
-import { iconTypes } from "./constants/icons";
-import { Button } from "./components/Button";
+import { Switch, Route } from "react-router-dom";
 
 const MyComponent = () => {
   return <div></div>
@@ -25,16 +23,9 @@ function App() {
           <br/>
           <MyComponent/>
 
-          <Button className="customClass" id="id" iconType={iconTypes.plus}>First</Button>
-          <br/>
-          <Button className="customClass" size="small" color="primary" id="id">Second</Button>
-          <br/>
-
-
-          <Icon type={iconTypes.cross} color="cyan" id="23" className="plus"/>
-          <br/>
-          <Icon type={iconTypes.plus} size="16px" id="22"/>
-          <br/>
+          <Switch>
+            <Route></Route>
+          </Switch>
 
           <MyClassComponent/>
 
