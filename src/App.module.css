@@ -1,0 +1,37 @@
+.App {
+  text-align: center;
+  color: white;
+  min-height: 100vh;
+}
+.mainContainer {
+  display: flex;
+  min-height: 100vh;
+}
+.sidebar {
+  min-height: 100%;
+  border-right: 1px solid #fff;
+  padding-right: 26px;
+}
+.menuContainer a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid skyblue;
+  margin-bottom: 10px;
+  padding: 7px;
+  display: block;
+  transition: background-color 0.3s;
+}
+.menuContainer a:hover {
+  background-color: skyblue;
+}
+.activeLink {
+  background-color: #4fb2da;
+}
+.mainLayout {
+  display: flex;
+  min-height: 100%;
+  padding: 20px;
+  flex-grow: 1;
+  align-items: flex-start;
+  justify-content: center;
+}
